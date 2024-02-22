@@ -82,7 +82,7 @@ namespace DedicatedServerUsernameFix
             //If the LobbyManager can't find a username, then directly check here.
             if (string.IsNullOrEmpty(resolvedName))
             {
-                //Copy this fix from the 
+                //Copy this fix from the FixGetUserDisplayName Hook
                 if (Client.Instance != null)
                 {
                     resolvedName = Client.Instance.Friends.GetName(self.steamId.steamValue);
